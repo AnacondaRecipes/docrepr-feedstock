@@ -50,6 +50,11 @@ about:
   license_file: LICENSE.txt
   summary: Generate rich representations for docstrings
   dev_url: https://github.com/spyder-ide/docrepr
+  doc_url: https://github.com/spyder-ide/docrepr
+  description: |
+    Docrepr renders Python docstrings to HTML with Sphinx.
+    It can generate rich and plain representations of docstrings,
+    alongside additional metadata about the object to which the docstring belongs.
 
 extra:
   recipe-maintainers:
