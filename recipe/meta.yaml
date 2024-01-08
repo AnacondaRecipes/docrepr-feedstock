@@ -25,6 +25,8 @@ requirements:
     - docutils
     - jinja2
     - sphinx >1.1
+  run_constrained:
+    - matplotlib-base >=2.2.4
 
 test:
   imports:
