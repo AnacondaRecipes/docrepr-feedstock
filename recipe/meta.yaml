@@ -10,17 +10,18 @@ source:
   sha256: 3ad62ecdaa0b7ab90dcd9c29abc98cae7d61d09339f18396d4ca5b8ab41c8b90
 
 build:
-  noarch: python
+  skip: True  # [py<36]
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python  >=3.6
+    - python
     - pip
-    - setuptools >42
+    - setuptools
+    - wheel
   run:
-    - python  >=3.6
+    - python
     - docutils
     - jinja2
     - sphinx >1.1
